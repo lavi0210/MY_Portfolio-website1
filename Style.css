@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    height: 100vh;
+}
+.top{
+    background: #000;  
+}
+
+.logo{
+    /* height:50px; */
+    font-size: x-large;
+    color: white;
+    /* background: #86B6F6; */
+}
+nav{
+    margin: 0 100px;
+    padding: 10px;
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+ul li a {
+text-decoration: none;
+padding: 10px;
+color: white;
+position: relative;
+}
+ul li a:after{
+    content: " ";
+    position: absolute;
+    background: red;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transform: 0.3s;
+}
+a:hover{
+    color: #ffff;
+}
+ul li a:hover:after{
+    width: 100%;
+}
+nav .openMenu{
+    font-size: 1rem;
+    margin: 5px;
+    display: none;
+    cursor: pointer;
+    color: #ffff;
+}
+nav .closeMenu , .icons{
+    font-size: 2rem;
+    color: #ffff;
+    display: none;
+    cursor: pointer;
+}
+.fa-facebook:hover{ color: rgb(61, 61, 234);}
+.fa-twitter:hover{ color: rgba(53, 114, 236, 0.958);}
+.fa-instagram:hover{ color: rgb(199, 61, 234);}
+.fa-github:hover{ color: rgb(61, 61, 234);}
+ 
+/* @media (max-width:700px){
+    .top nav{
+     height: 100vh;
+     position: fixed;
+     top: 0;
+     right: 0;
+     left: 0;
+     z-index: 10;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     transition: top 1s ease;
+     display: none;
+     background: #000;
+    }
+
+    nav .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu{
+        display: block;
+    }
+    nav li a:hover{
+        background: none;
+        color: rgb(255, 123, 0);
+        font-size: 1.6rem;
+    }
+    .icons{
+        display: inline-block;
+        padding: 10px;
+    }
+} */
+
+
+.section2{
+    display: flex;
+    margin: auto;
+    padding: 40px;
+}
+.textArea{
+    margin: auto;
+    /* font-family: 
+    'Rubik Doodle Shadow'; */
+}
+.btt button{
+    margin: 5px;
+    padding: 5px 10px;
+}
+.btt i{
+    font-size:25px
+    ;
+}
+.textArea samp{
+    color: rgb(210, 56, 56);
+    /* font-family: 
+    'Rubik Doodle Shadow'; */
+}
+.section2 .imgArea{
+    margin: auto;
+}
+.section2 .imgArea img{
+    max-height: 450px;
+}
+footer{
+    background: #000;
+    position: relative;
+    height: 50px;
+    color: white;
+}
+footer p{
+    padding: 5px;
+    text-align: center;
+}
+footer .icon{
+    text-align: center;
+}
+footer .icon i{
+    padding: 2px;
+}
+
+/* technical skills(About me) */
+.content{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+.tech-skills{
+   min-width: 100vw;
+    min-height: 83vh;
+}
+.tech-skills .skills{
+    text-align: center;
+    margin: 10px;
+}
+.skill1{
+    /* border: solid 1px ; */
+
+    margin: auto;
+    width: 500px;
+}
+#text{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.skill1 .anm{
+    margin: 10px;
+    position: relative;
+    width: 100%;
+    height: 12px;
+    border: solid 1px black;
+    border-radius: 20px;
+}
+#sp1{
+    display: flex;
+    background-color: rgb(35, 87, 245);
+    width: 100%;
+    height: 10px;
+    border-radius: 20px;
+    animation: Movement  3s  1 linear forwards  ;
+}
+@keyframes Movement {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+    
+}
+.skill2{
+    margin: 15px 0;
+}
+#sp2{
+    display: flex;
+    background-color: rgb(35, 87, 245);
+    width: 100%;
+    height: 10px;
+    border-radius: 20px;
+    animation: Movement2  3s  1 linear forwards ;
+}
+@keyframes Movement2 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 75%;
+    }
+}
+.skill3{
+    margin: 15px 0;
+}
+#sp3{
+    display: flex;
+    background-color: rgb(35, 87, 245);
+    width: 100%;
+    height: 10px;
+    border-radius: 20px;
+    animation: Movement3  3s  1 linear forwards ;
+}
+@keyframes Movement3 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 60%;
+    }
+}
+.skill4{
+    margin: 15px 0;
+}
+#sp4{
+    display: flex;
+    background-color: rgb(35, 87, 245);
+    width: 100%;
+    height: 10px;
+    border-radius: 20px;
+    animation: Movement3  3s  1 linear forwards ;
+}
+@keyframes Movement3 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+.main-pro-sec{
+    /* border: 2px solid brown; */
+    display: flex;
+    flex-direction: column;
+}
+.main-pro-sec h2{
+    margin: auto;
+}
+.project-box{
+    border: solid black 1px;
+    height: 30%;
+    margin: 10px 40px 1px 40px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-box .box1 {
+    position: relative;
+    margin: 2em auto;
+    width: 25em;
+    height: 12em;
+    
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: url(/Screenshot\ 2024-01-01\ 004111.png) center;
+    background-size: cover;
+}
+.project-box .box1 .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background: #22222284;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    opacity: 0;
+}
+.project-box .box1 .overlay:hover{
+    opacity: 1;
+}
+.project-box .box1 .overlay .btn{
+    border: 1px solid #4f4f4f;
+    text-decoration: none;
+    margin: 2px;
+    padding: 2px;
+    color: white;
+}
+.box1 .overlay .btn:hover{
+    background-color: #5a5757;
+}
+.box1 .btn,.box1 h4{
+    transition: 0.3s;
+    transform: translateY(-20px);
+}
+.box1:hover .btn, .box1:hover h4{
+    transform: translateY(0);
+}
+/* ----------------------------------Project2---------------------------- */
+.project-box .box2 {
+    position: relative;
+    width: 25em;
+    height: 12em;
+    margin: 2em auto;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: url(/Screenshot\ 2024-01-05\ 062035.png) center;
+    background-size: cover;
+}
+.project-box .box2 .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background: #22222284;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    opacity: 0;
+}
+.project-box .box2 .overlay:hover{
+    opacity: 1;
+}
+.project-box .box2 .overlay .btn{
+    border: 1px solid #4f4f4f;
+    text-decoration: none;
+    margin: 2px;
+    padding: 2px;
+    color: white;
+}
+.box2 .overlay .btn:hover{
+    background-color: #5a5757;
+}
+.box2 .btn,.box2 h4{
+    transition: 0.5s;
+    transform: translateY(-40px);
+}
+.box2:hover .btn, .box2:hover h4{
+    transform: translateY(0);
+}
+
+/* -------------------PROJECT3------------------------------------------ */
+
+.project-box .box3 {
+    position: relative;
+    margin: 2em auto;
+    width: 25em;
+    height: 12em;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: url(/) center;
+    background-size: cover;
+}
+.project-box .box3 .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background: #22222284;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    opacity: 0;
+}
+.project-box .box3 .overlay:hover{
+    opacity: 1;
+}
+.project-box .box3 .overlay .btn{
+    border: 1px solid #4f4f4f;
+    text-decoration: none;
+    margin: 2px;
+    padding: 2px;
+    color: white;
+}
+.box3 .overlay .btn:hover{
+    background-color: #5a5757;
+}
+.box3 .btn,.box3 h4{
+    transition: 0.5s;
+    transform: translateY(-40px);
+}
+.box3:hover .btn, .box3:hover h4{
+    transform: translateY(0);
+}
