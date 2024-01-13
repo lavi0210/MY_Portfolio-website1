@@ -67,8 +67,8 @@ nav .closeMenu , .icons{
 .fa-instagram:hover{ color: rgb(199, 61, 234);}
 .fa-github:hover{ color: rgb(61, 61, 234);}
  
-/* @media (max-width:700px){
-    .top nav{
+ @media (max-width:700px) { 
+    nav .mainMenu{
      height: 100vh;
      position: fixed;
      top: 0;
@@ -88,6 +88,7 @@ nav .closeMenu , .icons{
         position: absolute;
         top: 20px;
         right: 20px;
+        color: #ffff;
     }
     nav .openMenu{
         display: block;
@@ -97,11 +98,11 @@ nav .closeMenu , .icons{
         color: rgb(255, 123, 0);
         font-size: 1.6rem;
     }
-    .icons{
+    .icons i{
         display: inline-block;
         padding: 10px;
     }
-} */
+} 
 
 
 .section2{
@@ -286,7 +287,7 @@ footer .icon i{
     justify-content: center;
     text-align: center;
     align-items: center;
-    background: url(/Screenshot\ 2024-01-01\ 004111.png) center;
+    background: url(img2.png) center;
     background-size: cover;
 }
 .project-box .box1 .overlay{
@@ -336,7 +337,7 @@ footer .icon i{
     justify-content: center;
     text-align: center;
     align-items: center;
-    background: url(/Screenshot\ 2024-01-05\ 062035.png) center;
+    background: url(img3.png) center;
     background-size: cover;
 }
 .project-box .box2 .overlay{
