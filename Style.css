@@ -288,16 +288,27 @@ footer .icon i{
     display: flex;
     flex-direction: column;
 }
+
+
+/* --------------------------------------Project-section-------------------------------- */
 .main-pro-sec h2{
     margin: auto;
 }
 .project-box{
-    border: solid black 1px;
+    /* border: solid black 1px; */
     height: 30%;
     margin: 10px 40px 1px 40px;
     /* position: relative; */
     display: flex;
     flex-wrap: wrap;
+}
+@media (max-width:590px){
+    .project-box{
+        margin: 0;
+}
+.project-box .box1{
+    background-size: contain;
+}
 }
 
 .project-box .box1 {
