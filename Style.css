@@ -33,7 +33,7 @@ padding: 10px;
 color: white;
 position: relative;
 }
-ul li a:after{
+/* ul li a:after{
     content: " ";
     position: absolute;
     background: red;
@@ -102,7 +102,7 @@ nav .closeMenu , .icons{
         display: inline-block;
         padding: 10px;
     }
-} 
+}  */
 
 
 .section2{
