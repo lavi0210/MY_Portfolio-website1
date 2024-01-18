@@ -99,6 +99,9 @@ position: relative;
     position: absolute;
     right: 25px;
    }
+   nav{
+    margin: 0 30px;
+   }
 
 
 }
