@@ -1,16 +1,16 @@
-const mainMen = document.querySelector('.mainMenu');
-const closeMen = document.querySelector('.closeMenu');
-const openMen = document.querySelector('openMenu');
+const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
 
 
-openMen.addEventListener('click',show);
-closeMen.addEventListener('click',close);
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
 
-function show (){
-    mainMen.style.display ='flex';
-    mainMen.style.top ='0';
-
+function show(){
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
 }
+
 function close(){
-    mainMen.style.top ='100%';
+    mainMenu.style.top = '-100%';
 }

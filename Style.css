@@ -5,9 +5,11 @@
 }
 .main{
     height: 100vh;
+    position: relative;
 }
 .top{
     background: #000;  
+    
 }
 
 .logo{
@@ -22,6 +24,7 @@ nav{
     display:flex ;
     justify-content: space-between;
     align-items: center;
+    color: #fff;
 }
 ul{
     display: flex;
@@ -33,77 +36,72 @@ padding: 10px;
 color: white;
 position: relative;
 }
-/* ul li a:after{
-    content: " ";
-    position: absolute;
-    background: red;
-    height: 2px;
-    width: 0;
-    left: 0;
-    bottom: -1px;
-    transform: 0.3s;
-}
-a:hover{
-    color: #ffff;
-}
-ul li a:hover:after{
-    width: 100%;
-}
-nav .openMenu{
-    font-size: 1rem;
-    margin: 5px;
-    display: none;
+.top nav .openMenu{
+    color: #fff;
+    font-size: 1.5rem;
     cursor: pointer;
-    color: #ffff;
-}
-nav .closeMenu , .icons{
-    font-size: 2rem;
-    color: #ffff;
     display: none;
-    cursor: pointer;
 }
-.fa-facebook:hover{ color: rgb(61, 61, 234);}
-.fa-twitter:hover{ color: rgba(53, 114, 236, 0.958);}
-.fa-instagram:hover{ color: rgb(199, 61, 234);}
-.fa-github:hover{ color: rgb(61, 61, 234);}
- 
- @media (max-width:650px) { 
-    nav .mainMenu{
-     height: 100vh;
-     position: fixed;
-     top: 0;
-     right: 0;
-     left: 0;
-     z-index: 10;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     transition: top 1s ease;
-     display: none;
-     background: #000;
-    }
-
-    nav .closeMenu{
-        display: block;
+.top nav .mainMenu .closeMenu{
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.top nav .mainMenu .icons{
+    font-size: 1.5rem;
+    display: none;
+}
+@media (max-width:650px){
+    .mainMenu{
         position: absolute;
-        top: 20px;
-        right: 20px;
-        color: #ffff;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 125vh;
+        background: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        transition: top 1s ease;
+        display: none;
     }
-    nav .openMenu{
-        display: block;
-    }
-    nav li a:hover{
-        background: none;
-        color: rgb(255, 123, 0);
-        font-size: 1.6rem;
-    }
-    .icons i{
-        display: inline-block;
+    ul li{
         padding: 10px;
     }
-}  */
 
+    ul li a{
+        font-size: 1.5rem;
+        padding: 1.2rem;
+    }
+    .top nav .mainMenu .icons{
+        display: block;
+        margin: 2rem;
+    }
+    .top nav .mainMenu .icons i{
+        padding: 0.2rem;
+        /* font-size: 1.7rem; */
+    }
+   .fa-facebook:hover{color: rgb(95, 124, 221); font-size: 1.7rem;}
+   .fa-instagram:hover{color: rgb(228, 106, 228); font-size: 1.7rem;}
+   .fa-twitter:hover{color: rgb(95, 124, 221); font-size: 1.7rem;}
+   .fa-github:hover{color: rgb(95, 221, 112); font-size: 2rem;}
+
+   .top nav .mainMenu .closeMenu{
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 20px;
+   }
+   .top nav .openMenu{
+    display: block;
+    position: absolute;
+    right: 25px;
+   }
+
+
+}
 
 .section2{
     display: flex;
@@ -463,3 +461,5 @@ footer .icon i{
 .box3:hover .btn, .box3:hover h4{
     transform: translateY(0);
 }
+
+
